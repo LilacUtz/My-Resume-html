@@ -40,7 +40,7 @@ p {
 
 hr {
     border: none;
-    background-color: rgb(133, 64, 133);
+    background-color: rgb(215, 169, 250);
     height: 1px;
 }
 
@@ -49,5 +49,5 @@ h1, h2 {
     margin-bottom: 0;
 }
 #mainLeft {
-    border-right: 1px solid rgb(133, 64, 133);
+    border-right: 1px solid rgb(189, 147, 226);
 }
