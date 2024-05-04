@@ -53,7 +53,7 @@ p {
 
 hr {
     border: none;
-    background-color: rgb(160, 148, 238);
+    background-color: rgb(155, 120, 229);
     height: 1px;
 }
 
@@ -62,5 +62,5 @@ h1, h2 {
     margin-bottom: 0;
 }
 #mainLeft {
-    border-right: 1px solid rgb(160, 148, 238);
+    border-right: 1px solid rgb(155, 120, 229);
 }
