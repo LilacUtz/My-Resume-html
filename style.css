@@ -3,7 +3,7 @@ body {
     
     font-family: 'Century Gothic', 'Lucida Sans', 'Aptos', 'Calibri Light';
     font-size: 22px;
-    max-width: 960px;
+    max-width:1300px;
     margin: auto;
      
   
@@ -31,7 +31,7 @@ h2 {
 }
 main { 
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     margin-top: 3em;
 }
 header {
