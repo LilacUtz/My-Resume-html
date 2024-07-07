@@ -1,7 +1,8 @@
 
 body {
     
-    font-family: 'Century Gothic', 'Lucida Sans', 'Aptos', 'Calibri Light';
+    
+    font-family: 'Century Gothic', 'Lucida Sans', 'Ariel', 'Calibri Light';
     font-size: 18px;
     max-width:900px;
     margin: auto;
@@ -13,11 +14,7 @@ body {
     background-color: #baafea;
 
 
-      
-      
 
-      
-}
 h1 {
     font-size: 3em;
     letter-spacing: .6em;
