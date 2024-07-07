@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Lilac Utz</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        #header {
+            background-color: #1a3a5f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .section-title {
+            color: #6c5ce7;
+            border-bottom: 2px solid #6c5ce7;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            animation: fadeIn 1s forwards;
+        }
+
+        .contact-info i,
+        .contact-info a {
+            margin-right: 10px;
+            color: #6c5ce7;
+        }
+
+        .fa-star {
+            color: gold;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        section p {
+            margin: 0 0 10px;
+            animation: fadeIn 1s forwards;
+        }
+
+        a {
+            color: #6c5ce7;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #8c7ae6;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        h2.section-title {
+            font-size: 1.5rem;
+            animation: fadeInUp 1s forwards;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .top-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: fadeIn 1s forwards;
+            display: none; /* מסתיר את הכפתור בתצוגת מחשב */
+            margin-bottom: 70%; /* מוסיף רווח של 30% מהתחתית */
+        }
+
+        .top-link a {
+            display: inline-block;
+            background-color: #6c5ce7;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .top-link a:hover {
+            background-color: #8c7ae6;
+            transform: scale(1.05);
+        }
+
+        .btn-custom {
+            background-color: #6c5ce7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #8c7ae6;
+            transform: scale(1.05);
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #6c5ce7;
+        }
+
+        /* Responsive design */
+        @media (max-width: 767px) {
+            #header {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .btn-custom {
+                padding: 8px 15px;
+            }
+
+            .top-link {
+                display: block; /* מציג את הכפתור במכשירים קטנים */
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .top-link a {
+                padding: 8px 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-md-4 {
+                order: 1; /* Changed to order 1 to ensure left placement */
+            }
+
+            .col-md-8 {
+                order: 2; /* Changed to order 2 to ensure right placement */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1><b>Lilac Utz</b></h1>
+        <h3><b>QA Engineer</b> Manual & Automation</h3>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <section>
+                    <h2 class="section-title">CONTACT</h2>
+                    <p>Modi'in</p>
+                    <p class="contact-info">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:053-6222508">053-6222508</a>
+                    </p>
+                    <p class="contact-info">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:lilactpa@gmail.com">E-Mail</a>
+                    </p>
+                    <p class="contact-info">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <a href="http://www.linkedin.com/in/lilac-utz-qa-engineer">My Linkedin</a>
+                    </p>
+                    <p class="contact-info">
+                        <i class="fab fa-google-drive" aria-hidden="true"></i>
+                        <a href="https://drive.google.com/drive/folders/1Hy312ThRPcIcb-t2xuSPf1HBMAES229n?usp=sharing">Manual Project (formal)</a>
+                    </p>
+                </section>
+                <section>
+                    <h2 class="section-title">EDUCATION</h2>
+                    <p>Udemy | 2024 (student)<br>Python Pro Bootcamp</p>
+                    <p>Bar-Ilan University | 2023-2024<br>QA Certification</p>
+                    
+                </section>
+                <section>
+                    <h2 class="section-title">SOFT SKILLS</h2>
+                    <p>Problem solving | Detail oriented | Organized | Communication | Leadership | Ambitious | Management | Analytic</p>
+                </section>
+                <section>
+                    <h2 class="section-title">TECHNICAL TOOLS</h2>
+                    <p>STP | STD | STR | Python | Jira | Xray | SQL | HTML | CSS | VMware | PyCharm | Selenium | Playwright | Pytest | Appium | VS Code | Postman | Rest | Soap | API</p>
+                </section>
+                <section>
+                    <h2 class="section-title">LANGUAGES</h2>
+                    <p>English | Hebrew</p>
+                </section>
+                <section>
+                    <h2 class="section-title">HOBBIES</h2>
+                    <p>Swimming | Cooking | Biology</p>
+                </section>
+            </div>
+            <div class="col-md-8">
+                <section>
+                    <h2 class="section-title">SUMMARY</h2>
+                    <p>After managing and coaching teams for over 10 years by setting high standards of quality in every aspect, I realized that Quality Assurance is my real passion. In the past months, I've learned QA methodologies and acquired essential tools to achieve quality. I also have a strong affection for coding in Python.</p>
+                </section>
+               <section>
+                    <h2 class="section-title">PROJECTS</h2>
+                    <p>
+                        <center><a href="https://www.linkedin.com/feed/update/urn:li:activity:7200380279583047680?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7200380279583047680%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8wei8RDnSlS19x8rdY02jQ%3D%3D" class="btn btn-custom d-none d-md-inline-block">Manual Project</a></center><br>
+                        Conduct requirements analysis, establish test traceability with attention to detail by following SDLC, and draft test procedures STP, STD, STR. Executed Blackbox, Front-end manual integration and E2E tests for web and mobile and perform manual Exploratory tests as a part of the project and investigating production issues while documenting and managing bug reports using Jira and Xray. Successfully conducted Regression and Compatibility tests on different environments and devices to make sure the core functionalities remain as required. The chosen App was a finance therefore it was necessary to conduct Penetrating tests in addition to all the above.<br><br>
+                        <center><a href="https://github.com/LilacUtz/POM-Automation-Project_Selenium" class="btn btn-custom d-none d-md-inline-block">Automation Project (Selenium Python)</a></center><br>
+                        Created, prioritized, organized, and ran automation script suites successfully in PyCharm using Playwright, Pytest, Selenium, and Appium, by using different locators in DevTools to find elements on the HTML page and define test functions and run them. Overcame the difficulty of some hard-to-get elements such as pop-ups and active elements. Analyzed log errors and failed tests problem solving dealing with Actual results versus Expected results. Executed API client-server requests utilizing Postman using Rest and Soap for comprehensive testing and validation, as part of self-learning. Enrolled in Python development courses on Udemy, practicing coding with VS Code, and uploading many GitHub repositories as studies progress.<br><br>
+                        <center><a href="https://lilacutz.github.io/My-Resume-html/" class="btn btn-custom d-none d-md-inline-block">My Resume HTML</a></center><br>
+                        Developed HTML & CSS web pages during the course as a practice, to better understand this matter, including a personal resume page, which you can tap on the link above. Utilized SQL queries to extract data from databases and manipulation, enjoying writing queries very much. Configure and maintain environments, including VMware on Windows and basic Linux.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="section-title">WORK HISTORY</h2>
+                    <p><b>Coaching-Manager</b>, FOXhome<br>
+                        Established over 10 new branches and conducted training sessions for over 100 management teams and employees while overseeing the operational management of the store branch. Demonstrated a keen understanding of customer requirements and company standards. Achieved a consistent annual increase in branch revenue by 3% and conducted regular weekly reviews. Achieved many formal certifications as a leading manager.</p>
+                </section>
+                <div class="top-link">
+                    <a href="#header">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <b>&copy; Lilac Utz</b>
+    </footer>
+</body>
+
+</html>
