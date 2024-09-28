@@ -28,7 +28,7 @@ h2 {
 }
 main { 
     display: grid;
-    grid-template-columns: 37% 63%;
+    grid-template-columns: 40% 60%;
     margin-top: 3em;
 }
 header {
